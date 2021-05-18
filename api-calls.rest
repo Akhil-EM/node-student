@@ -1,0 +1,46 @@
+### app base
+GET http://localhost:6060
+
+
+### create student
+POST http://localhost:6060/student
+Content-Type: application/json
+
+{
+    "name":"Dhillu",
+    "class":"S2D",
+    "rollNo":"36",
+    "email":"dhillu@gmail.com",
+    "home":"P house",
+    "place":"perumanna",
+    "pincode":678654
+
+}
+
+### fetch all students
+GET http://localhost:6060/student
+
+
+### edit student 
+PUT http://localhost:6060/student
+Content-Type: application/json
+
+{
+    "name":"Dhillu p",
+    "class":"S2D",
+    "rollNo":"36",
+    "email":"dhillu@gmail.com",
+    "home":"P house",
+    "place":"perumanna",
+    "pincode":678654,
+    "id":"60a35ffdf0fc2c09005f3c12"
+}
+
+
+### delete student
+DELETE http://localhost:6060/student
+Content-Type:application/json
+
+{
+    "id":"60a35edc4be8ef328cfc4e94"
+}
